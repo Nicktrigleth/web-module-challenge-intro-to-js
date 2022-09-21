@@ -192,24 +192,24 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 let computer = Math.random();
 
 if(computer <= 0.34){
-  computer = 'rock'
+  computer = 'rock';
 }else if(computer <= 0.67){
   computer = 'paper';
-}else if(computer > .67){
+}else if(computer > 0.67){
   computer = 'scissors';
 }
 
 function game(user, computer){
     if(user === computer){
-      return 'Its a tie';
+      return `it's a tie`;
     }else if(user === 'rock' && computer === 'scissors'){
-      return 'You Win!';
+      return 'you win!';
     }else if(user === 'paper' && computer === 'rock'){
-      return 'You Win!';
+      return `you win!`;
     }else if(user === 'scissors' && computer === 'paper'){
-      return 'You Win!';
+      return `you win!`;
     }else{
-      return 'you lose';
+      return `you lose!`;
     }
 }
 console.log('task 4', game('paper', computer));
@@ -288,15 +288,15 @@ Using the grade function below do the following:
 
 function grade(number){
   if(number >= 90){
-    return 'you got a A';
+    return 'you got an A';
   }else if(number < 90 && number >= 80){
     return 'you got a B';
   }else if(number < 80 && number >= 70){
     return 'you got a C';
   }else if(number < 70 && number >= 60){
     return 'you got a D';
-  }else if(number <60 ){
-    return 'you got a F';
+  }else if(number < 60){
+    return 'you got an F';
   }
 }
 console.log('task 7', grade(90));
